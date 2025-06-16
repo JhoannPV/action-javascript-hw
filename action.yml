@@ -1,0 +1,16 @@
+name: 'Hello World Action JABP' # El nombre de la acción debe ser único
+description: 'Greer someone and record the time'
+inputs:
+  who-to-greet: # id del input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time: # id del output
+    description: 'The time greeted you'
+runs:
+  using: 'node20'
+  main: 'index.js'
+branding:
+  icon: 'message-square'
+  color: 'blue'
